@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases</title>
+    <style>
+        p:first-child{
+            color: red;
+        }
+
+        p:last-child{
+            color: green;
+        }
+        /* Solamente los pares */
+        p:nth-child(2n) {
+            color: blue;
+        }
+
+        /* solamente los impares */
+        p:nth-child(2n+1) {
+            color: red;
+        }
+
+        /* Pseudo-elementos */
+
+        p::first-letter{
+            color: yellow;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Conejo</p>
+    <p>Perro</p>
+    <p>Vaca</p>
+    <p>Vaca</p>
+</body>
+</html>
